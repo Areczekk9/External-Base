@@ -17,6 +17,27 @@ int LocalPlayer::getLocalFlags()
 	return rpm<int>(LocalPlayer::getLocalPlayer() + netvars::m_fFlags);
 }
 
+int LocalPlayer::getGlowIndex(DWORD playerBase)
+{
+	return rpm<int>(playerBase + netvars::m_iGlowIndex);
+}
+
+void LocalPlayer::glowEsp(DWORD glowObj, int glowInd, float r, float g, float b, float a)
+{
+	wpm<float>(r / 255, (glowObj + ((glowInd * 0x38) + 0x8)));
+	wpm<float>(g / 255, (glowObj + ((glowInd * 0x38) + 0xC)));
+	wpm<float>(b / 255, (glowObj + ((glowInd * 0x38) + 0x10)));
+	wpm<float>(a / 255, (glowObj + ((glowInd * 0x38) + 0x14)));
+	wpm<int32_t>(1, (glowObj + ((glowInd * 0x38) + 0x30)));
+	wpm<bool>(true, (glowObj + ((glowInd * 0x38) + 0x28)));
+	wpm<bool>(false, (glowObj + ((glowInd * 0x38) + 0x29)));
+}
+
+DWORD LocalPlayer::getGlowObj()
+{
+	return rpm<DWORD>(baseAddress + offs::dwGlowObjectManager);
+}
+
 int LocalPlayer::getLocalHealth()
 {
 	return rpm<int>(LocalPlayer::getLocalPlayer() + netvars::m_iHealth);
