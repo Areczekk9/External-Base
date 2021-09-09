@@ -1,0 +1,12 @@
+#pragma once
+#include <Windows.h>
+#include <TlHelp32.h>
+#include <iostream>
+#include <string>
+#include "Offsets.hpp"
+#include "Entity.h"
+#include "LocalPlayer.h"
+#include "Memory.h"
+#include "W2S.h"
+#include "Math.h"
+#include <corecrt_math_defines.h>

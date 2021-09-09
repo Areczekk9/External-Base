@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\SDK">
+      <UniqueIdentifier>{7b5fa69c-cdd5-44bd-98a1-373754bde86c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK">
+      <UniqueIdentifier>{b607e7a5-f6a3-4ba1-820f-cfec359c80ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MEM">
+      <UniqueIdentifier>{35258b28-199e-4092-8585-52ee9f0eb5b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MEM">
+      <UniqueIdentifier>{141e7ad9-f875-4237-8e51-198e76c2d0de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="W2S.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalPlayer.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.hpp">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Header Files\MEM</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalPlayer.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Source Files\MEM</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
