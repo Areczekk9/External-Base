@@ -46,12 +46,12 @@ bool Entity::isValid(DWORD playerBase)
 //TODO: MINIMISE WPM CALLS HERE BY USING A GLOW STRUCT 
 void Entity::glowEsp(DWORD glowObj, int glowInd, float r, float g, float b, float a)
 {
-	wpm<float>(r / 255, (glowObj + ((glowInd * 0x38) + 0x4)));
-	wpm<float>(g / 255, (glowObj + ((glowInd * 0x38) + 0x8)));
-	wpm<float>(b / 255, (glowObj + ((glowInd * 0x38) + 0xC)));
-	wpm<float>(a / 255, (glowObj + ((glowInd * 0x38) + 0x10)));
-	wpm<bool>(true, (glowObj + ((glowInd * 0x38) + 0x24)));
-	wpm<bool>(false, (glowObj + ((glowInd * 0x38) + 0x25)));
+	wpm<float>(r / 255, (glowObj + ((glowInd * 0x38) + 0x8)));
+	wpm<float>(g / 255, (glowObj + ((glowInd * 0x38) + 0xC)));
+	wpm<float>(b / 255, (glowObj + ((glowInd * 0x38) + 0x10)));
+	wpm<float>(a / 255, (glowObj + ((glowInd * 0x38) + 0x14)));
+	wpm<bool>(true, (glowObj + ((glowInd * 0x38) + 0x28)));
+	wpm<bool>(false, (glowObj + ((glowInd * 0x38) + 0x29)));
 }
 
 bool Entity::getSpotted(DWORD playerBase)
